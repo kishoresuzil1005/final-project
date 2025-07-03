@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Scaling Groups</title>
+    <link rel="stylesheet" href="../../css/style.css"> </head>
+<body>
+    <header>
+        <h1>AWS Cloud Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Home</a></li> <li><a href="ec2-overview.html">EC2 Dashboard</a></li> </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <h2>Auto Scaling Groups</h2>
+        <button id="refreshButton" class="action-button">Refresh ASGs</button>
+        <div id="loadingMessage">Loading Auto Scaling Groups...</div>
+        <div id="errorMessage" class="error-message" style="display: none;"></div>
+        <table id="autoScalingGroupsTable">
+            <thead>
+                <tr>
+                    <th>ASG Name</th>
+                    <th>Min Size</th>
+                    <th>Max Size</th>
+                    <th>Desired Capacity</th>
+                    <th>Launch Configuration/Template</th>
+                    <th>Instances</th>
+                    <th>Created Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; 2025 AWS Dashboard</p>
+    </footer>
+
+    <script src="../js/common.js"></script> <script src="../js/ec2-auto-scaling-groups.js"></script> </body>
+</html>

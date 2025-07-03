@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Groups</title>
+    <link rel="stylesheet" href="../../css/style.css"> </head>
+<body>
+    <header>
+        <h1>AWS Cloud Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Home</a></li> <li><a href="ec2-overview.html">EC2 Dashboard</a></li> </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <h2>Security Groups</h2>
+        <button id="refreshButton" class="action-button">Refresh Security Groups</button>
+        <div id="loadingMessage">Loading Security Groups...</div>
+        <div id="errorMessage" class="error-message" style="display: none;"></div>
+        <table id="securityGroupsTable">
+            <thead>
+                <tr>
+                    <th>Group Name</th>
+                    <th>Group ID</th>
+                    <th>Description</th>
+                    <th>VPC ID</th>
+                    <th>Inbound Rules</th>
+                    <th>Outbound Rules</th>
+                </tr>
+            </thead>
+            <tbody>
+                </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; 2025 AWS Dashboard</p>
+    </footer>
+
+    <script src="../js/common.js"></script> <script src="../js/ec2-security-groups.js"></script> </body>
+</html>
